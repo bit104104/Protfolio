@@ -1,0 +1,157 @@
+a{
+  text-decoration: none;
+}
+#skills ul{
+  text-align: left;
+}
+#skills .card-body img{
+  width: 50px;
+}
+/* .skill-modal div[id^="s"] p{
+ text-align: justify;
+} */
+/* lightbox */
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: aquamarine;
+  max-height: 283px;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+  height: 100% !important;
+  width: 100% !important;
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-modal .btn-close {
+  color: #1abc9c;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    /* font-size: 3rem; */
+    line-height: 2.5rem;
+  }
+}
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+.divider-custom .divider-custom-line:first-child,
+.divider-custom .divider-custom-line:last-child {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/* Experience Time Line */
+/* #timeline{
+  overflow-y:scroll;
+  height: 60vh;
+} */
+/* #timeline li {
+  list-style-type: none;
+} */
+#timeline .flow {
+  list-style-type: none;
+  padding-left: 0px;
+  position: relative;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  margin-top: 5%;
+}
+/* @media screen and (max-width: 750px){
+#timeline .flow {
+  padding-left: 0px;
+  }
+} */
+#timeline .flow::before {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background: #64a19d;
+  margin: 0px -8px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+/* @media screen and (max-width: 750px){
+#timeline .flow::before {
+  display:block;
+  }
+} */
+/* #timeline .flow > li {
+  position: relative;
+} */
+#timeline .flow > li:not(:last-child) {
+  margin-bottom: 8vh;
+}
+
+#timeline .flow > li dl {
+  padding-left: 80px;
+  position: relative;
+}
+/* 圓點虛線設定 */
+#timeline .flow > li dl::before,
+#timeline .flow > li dl::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+#timeline .flow > li dl::before {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: #e4c662;
+  border-radius: 50%;
+  left: 0px;
+  top: 52px;
+  border: 3px solid #f9fafb;
+}
+#timeline .flow > li dl::after {
+  width: 50px;
+  border-bottom: 2px dashed #e4c662;
+  position: absolute;
+  left: 25px;
+  top: 52px;
+}
+/* 時間軸內資料文字樣式 */
+#timeline .flow > li dl dt {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(0, 104, 55);
+  margin-bottom: 1vh;
+}
+#timeline .flow > li > dl > dd:nth-child(n+4){
+  border-bottom: 2px dotted #64a19d;
+}
