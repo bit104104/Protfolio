@@ -1,3 +1,6 @@
+section h2{
+  font-weight: 600;
+}
 a{
   text-decoration: none;
 }
@@ -7,9 +10,6 @@ a{
 #skills .card-body img{
   width: 50px;
 }
-/* .skill-modal div[id^="s"] p{
- text-align: justify;
-} */
 /* lightbox */
 .portfolio .portfolio-item {
   cursor: pointer;
@@ -18,7 +18,7 @@ a{
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  background-color: aquamarine;
+  background-color: rgb(100 161 157);
   max-height: 283px;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -49,7 +49,6 @@ a{
 }
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
-    /* font-size: 3rem; */
     line-height: 2.5rem;
   }
 }
@@ -75,26 +74,12 @@ a{
 }
 
 /* Experience Time Line */
-/* #timeline{
-  overflow-y:scroll;
-  height: 60vh;
-} */
-/* #timeline li {
-  list-style-type: none;
-} */
 #timeline .flow {
   list-style-type: none;
   padding-left: 0px;
   position: relative;
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
   margin-top: 5%;
 }
-/* @media screen and (max-width: 750px){
-#timeline .flow {
-  padding-left: 0px;
-  }
-} */
 #timeline .flow::before {
   content: "";
   width: 15px;
@@ -105,14 +90,6 @@ a{
   top: 0;
   left: 20px;
 }
-/* @media screen and (max-width: 750px){
-#timeline .flow::before {
-  display:block;
-  }
-} */
-/* #timeline .flow > li {
-  position: relative;
-} */
 #timeline .flow > li:not(:last-child) {
   margin-bottom: 8vh;
 }
@@ -121,7 +98,6 @@ a{
   padding-left: 80px;
   position: relative;
 }
-/* 圓點虛線設定 */
 #timeline .flow > li dl::before,
 #timeline .flow > li dl::after {
   content: "";
@@ -145,7 +121,6 @@ a{
   left: 25px;
   top: 52px;
 }
-/* 時間軸內資料文字樣式 */
 #timeline .flow > li dl dt {
   font-size: 22px;
   font-weight: 600;
@@ -154,4 +129,16 @@ a{
 }
 #timeline .flow > li > dl > dd:nth-child(n+4){
   border-bottom: 2px dotted #64a19d;
+}
+/* Portfolio */
+#portfolio .card{
+  height: 100%;
+}
+#portfolio ul{
+  text-align: left;
+}
+.img-icon{
+  position: relative;
+  top: 15%;
+  bottom: 15%;
 }
