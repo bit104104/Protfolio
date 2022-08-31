@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <div class="card py-4">
+                        <div class="card py-1">
                             <div class="card-body text-center">
                                 <img src="assets/img/icon/code.svg" alt="icon-code">
                                 <hr class="my-4 mx-auto" />
@@ -167,7 +167,7 @@
                     </div>
                     
                     <div class="col-md-4 mb-3">
-                        <div class="card py-4">
+                        <div class="card py-1">
                             <div class="card-body text-center">
                                 <img src="assets/img/icon/others.svg" alt="icon-other">
                                 <hr class="my-4 mx-auto" />
@@ -182,14 +182,13 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Skill Modals-->
                     <div class="col-md-4 portfolio mb-3">
                         <div class="portfolio-item mx-auto" onclick="getData('#s1');" data-bs-toggle="modal" data-bs-target=".lightbox">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center">
                                 <div class="portfolio-item-caption-content text-center text-white">
                                     <i class="fas fa-plus fa-3x"></i>
-                                    <p>三創競賽獎狀-網站特優</p>
+                                    <p>三創競賽獎狀<br>網站特優</p>
                                 </div>
                             </div>
                             <img class="img-fluid w-100" src="assets/skill/s1.png" alt="三創競賽獎狀-網站特優" />
@@ -492,6 +491,7 @@
                                     <li>申請、查詢公告功能</li>
                                     <li>審核、權限控管功能</li>
                                     <li>電子螢幕設定功能</li>
+                                    <li>經手專案：共計1次</li>
                                 </ul>
                         </div>
                     </div>
@@ -532,15 +532,15 @@
         </section>
 
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50">
+        <footer class="footer bg-black text-center text-white">
             <div class="container px-4 px-lg-5">
-                <div class="small">Email：<a href="#!">bit104104@gm.ntcu.edu.tw</a></div>
+                <div class="">Email：<a href="#!">bit104104@gm.ntcu.edu.tw</a></div>
                 Copyright &copy; Yung Website 2022
             </div>
         </footer>
 
 
-        <!-- lightbox Modals-->
+        <!-- lightbox Modal-->
         <div class="lightbox modal fade" tabindex="-1" aria-labelledby="lightbox" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -560,8 +560,8 @@
         <script src="js/scripts.js"></script>
         <script src="js/jquery.min.js"></script>
         <script>
+            // lightbox Modal getData
             function getData(id){
-                // JQuery規範：檔案路徑要留空格+id名稱，功能才會生效
                 $.get('box-data.html ' + id ,function(data,status){
                     $(".data").load('box-data.html ' + id);
                 });
