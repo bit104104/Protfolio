@@ -1,7 +1,7 @@
 <h1 align="center">I'm Yung Fang</h1>
 <h3 align="center">A IoT frontend developer</h3>
 
-- 🌱 I’m currently learning **SCSS、Vue.js**
+- 🌱 I’m currently learning **Node.js**
 
 - 📄 My experiences [https://bit104104.github.io/Portfolio/](https://bit104104.github.io/Portfolio/)
 
